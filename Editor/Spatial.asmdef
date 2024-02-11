@@ -1,12 +1,13 @@
 {
-    "name": "Meangpu.Editor",
+    "name": "Spatial",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
+    "references": [
+        "CSharpPromise",
+        "Meangpu.MeTools"
     ],
+    "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
