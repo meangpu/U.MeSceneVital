@@ -154,8 +154,8 @@ namespace Meangpu
 
             SetBaseClass(_verticesBlock);
             SetBlockClassFromRatio(_verticesBlock, resp.vertPercent);
-            _verticesCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.verts);
-            _verticesMax.text = "/ " + Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_VERTS);
+            _verticesCount.text = EditorUtility.AbbreviateNumber(resp.verts);
+            _verticesMax.text = "/ " + EditorUtility.AbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_VERTS);
             _meshIcon.ClearClassList();
             SetBlockClassFromRatio(_meshIcon, resp.vertPercent);
 
@@ -163,30 +163,30 @@ namespace Meangpu
             SetBaseClass(_sharedTexturesSubBlock, true);
             SetBlockClassFromRatio(_sharedTexturesBlock, resp.sharedTexturePercent);
             SetBlockClassFromRatio(_sharedTexturesSubBlock, resp.sharedTexturePercent);
-            _sharedTexturesCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.sharedTextureMB) + "mb";
-            _sharedTexturesMax.text = "/ " + Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_SHARED_TEXTURE_MB) + "mb";
-            _materialTexturesCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.materialTextureMB) + "mb";
+            _sharedTexturesCount.text = EditorUtility.AbbreviateNumber(resp.sharedTextureMB) + "mb";
+            _sharedTexturesMax.text = "/ " + EditorUtility.AbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_SHARED_TEXTURE_MB) + "mb";
+            _materialTexturesCount.text = EditorUtility.AbbreviateNumber(resp.materialTextureMB) + "mb";
             _lightmapTexturesBlock.style.display = resp.hasLightmaps ? DisplayStyle.Flex : DisplayStyle.None;
-            _lightmapTexturesCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.lightmapTextureMB) + "mb";
+            _lightmapTexturesCount.text = EditorUtility.AbbreviateNumber(resp.lightmapTextureMB) + "mb";
             _graphicTexturesBlock.style.display = resp.graphicTextureMB > 0 ? DisplayStyle.Flex : DisplayStyle.None;
-            _graphicTexturesCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.graphicTextureMB) + "mb";
+            _graphicTexturesCount.text = EditorUtility.AbbreviateNumber(resp.graphicTextureMB) + "mb";
             _reflectionProbeBlock.style.display = resp.reflectionProbeMB > 0 ? DisplayStyle.Flex : DisplayStyle.None;
-            _reflectionProbeCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.reflectionProbeMB) + "mb";
+            _reflectionProbeCount.text = EditorUtility.AbbreviateNumber(resp.reflectionProbeMB) + "mb";
             _textureIcon.ClearClassList();
             SetBlockClassFromRatio(_textureIcon, resp.sharedTexturePercent);
 
             SetBaseClass(_materialsBlock);
             SetBlockClassFromRatio(_materialsBlock, resp.uniqueMaterialsPercent);
-            _materialsCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.uniqueMaterials);
-            _materialsMax.text = "/ " + Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_UNIQUE_MATERIALS);
+            _materialsCount.text = EditorUtility.AbbreviateNumber(resp.uniqueMaterials);
+            _materialsMax.text = "/ " + EditorUtility.AbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_UNIQUE_MATERIALS);
             _materialIcon.ClearClassList();
             SetBlockClassFromRatio(_materialIcon, resp.uniqueMaterialsPercent);
 
             SetBaseClass(_audioBlock);
             SetBlockClassFromRatio(_audioBlock, resp.audioPercent);
             _audioBlock.style.display = resp.audioMB > 0 ? DisplayStyle.Flex : DisplayStyle.None;
-            _audioCount.text = Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(resp.audioMB) + "mb";
-            _audioMax.text = "/ " + Meangpu.Util.NumberUtil.ConvertToAbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_AUDIO_MB) + "mb";
+            _audioCount.text = EditorUtility.AbbreviateNumber(resp.audioMB) + "mb";
+            _audioMax.text = "/ " + EditorUtility.AbbreviateNumber(PerformanceResponse.MAX_SUGGESTED_AUDIO_MB) + "mb";
             _audioIcon.ClearClassList();
             SetBlockClassFromRatio(_audioIcon, resp.audioPercent);
 

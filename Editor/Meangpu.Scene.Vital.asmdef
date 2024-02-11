@@ -1,10 +1,10 @@
 {
     "name": "Meangpu.Scene.Vital",
     "rootNamespace": "",
-    "references": [
-        "Meangpu.MeTools"
+    "references": [],
+    "includePlatforms": [
+        "Editor"
     ],
-    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": false,
