@@ -9,7 +9,7 @@ using System;
 
 // script from [spatialsys/spatial-unity-sdk: This package allows creators to build content in Unity and publish it to Spatial](https://github.com/spatialsys/spatial-unity-sdk)
 
-namespace Meangpu
+namespace Meangpu.SceneVital
 {
     public class PerformanceCalculator
     {

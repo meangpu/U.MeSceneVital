@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace Meangpu
+namespace Meangpu.SceneVital
 {
     [InitializeOnLoad]
     public static class PackageManagerUtility

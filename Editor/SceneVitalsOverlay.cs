@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Overlays;
 using UnityEditor.SceneManagement;
 
-namespace Meangpu
+namespace Meangpu.SceneVital
 {
     [Overlay(typeof(SceneView), "Scene Vitals", true)]
     public class SceneVitalsOverlay : Overlay, ITransientOverlay

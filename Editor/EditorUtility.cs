@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace Meangpu
+namespace Meangpu.SceneVital
 {
     public static class EditorUtility
     {
