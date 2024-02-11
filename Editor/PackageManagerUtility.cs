@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace SpatialSys.UnitySDK.Editor
+namespace Meangpu
 {
     [InitializeOnLoad]
     public static class PackageManagerUtility

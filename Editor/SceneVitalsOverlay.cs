@@ -3,10 +3,8 @@ using UnityEngine.UIElements;
 using UnityEditor;
 using UnityEditor.Overlays;
 using UnityEditor.SceneManagement;
-using Meangpu;
 
-
-namespace SpatialSys.UnitySDK.Editor
+namespace Meangpu
 {
     [Overlay(typeof(SceneView), "Scene Vitals", true)]
     public class SceneVitalsOverlay : Overlay, ITransientOverlay
@@ -21,8 +19,8 @@ namespace SpatialSys.UnitySDK.Editor
 
         private VisualElement _verticesBlock;
         private Label _verticesCount;
-        private Label _verticesMax;
 
+        private Label _verticesMax;
         private VisualElement _meshIcon;
         private VisualElement _textureIcon;
         private VisualElement _materialIcon;

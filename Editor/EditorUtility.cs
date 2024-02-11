@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace SpatialSys.UnitySDK.Editor
+namespace Meangpu
 {
     public static class EditorUtility
     {
